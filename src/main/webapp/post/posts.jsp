@@ -21,6 +21,9 @@
     <title>Работа мечты</title>
 </head>
 <body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Работа мечты</title>
+<a class="nav-link" href="<%=request.getContextPath()%>/index.jsp">На главную</a>
 <div class="container pt-3">
 
     <div class="row">
@@ -38,7 +41,12 @@
                     <tbody>
                     <% for (Post post : Store.instOf().findAllPosts()) { %>
                     <tr>
-                        <td><%= post.getName() %></td>
+                        <td>
+                            <a href="<%=request.getContextPath()%>/post/edit.jsp?id=<%=post.getId()%>">
+                                <i class="fa fa-edit mr-3"></i>
+                            </a>
+                            <%=post.getName()%>
+                        </td>
                     </tr>
                     <% } %>
                     </tbody>
