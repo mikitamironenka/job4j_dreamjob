@@ -10,7 +10,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>PostServlet</servlet-name>
-        <url-pattern>/post/save</url-pattern>
+        <url-pattern>/posts.do</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -19,7 +19,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>CandidateServlet</servlet-name>
-        <url-pattern>/candidate/save</url-pattern>
+        <url-pattern>/candidates.do</url-pattern>
     </servlet-mapping>
 
 </web-app>
