@@ -1,5 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 
 <!doctype html>
 <html lang="en">
@@ -42,13 +42,13 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <c:forEach items="${candidates}" var="can">
+                    <c:forEach items="${candidates}" var="candidate">
                         <tr>
                             <td>
-                                <a href='<c:url value="/candidate/edit.jsp?id=${can.id}"/>'>
+                                <a href='<c:url value="/candidate/edit.jsp?id=${candidate.id}"/>'>
                                     <i class="fa fa-edit mr-3"></i>
                                 </a>
-                                <c:out value="${can.name}"/>
+                                <c:out value="${candidate.name}"/>
                             </td>
                         </tr>
                     </c:forEach>

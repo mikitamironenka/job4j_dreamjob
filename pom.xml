@@ -61,6 +61,10 @@
             <artifactId>log4j-core</artifactId>
             <version>${log4jVersion}</version>
         </dependency>
-
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>1.4</version>
+        </dependency>
     </dependencies>
 </project>
