@@ -13,6 +13,11 @@ public class Candidate {
         this.name = name;
     }
 
+    public Candidate(int id, String name, int photoId) {
+        this(id, name);
+        this.photoId = photoId;
+    }
+
     public int getId() {
         return id;
     }

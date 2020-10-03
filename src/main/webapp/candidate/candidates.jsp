@@ -38,7 +38,7 @@
                 <table class="table">
                     <thead>
                     <tr>
-                        <th scope="col">Названия</th>
+                        <th scope="col">ФИО</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -49,6 +49,9 @@
                                     <i class="fa fa-edit mr-3"></i>
                                 </a>
                                 <c:out value="${candidate.name}"/>
+                            </td>
+                            <td>
+                                <img src="<c:url value='/download?name=${image}'/>" width="50px" height="50px"/>
                             </td>
                         </tr>
                     </c:forEach>

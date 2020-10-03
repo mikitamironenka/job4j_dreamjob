@@ -48,9 +48,19 @@
                         <label>Имя</label>
                         <input type="text" class="form-control" name="name" value="<%=candidate.getName()%>">
                     </div>
-                    <button type="submit" class="btn btn-primary">Сохранить</button>
+
+                    <div class="form-group">
+
+                        <br />
+                        <img src="<%=request.getContextPath()%>/download?photoId=<%=candidate.getPhotoId()%>" width="100px" height="100px"/>
+                        <br />
+
+                    </div>
+                    <button type="submit" class="btn btn-default">Сохранить</button>
                 </form>
             </div>
+            <br />
+
         </div>
     </div>
 </div>
