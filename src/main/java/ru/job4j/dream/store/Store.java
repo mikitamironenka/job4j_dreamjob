@@ -20,6 +20,8 @@ public interface Store {
 
     Candidate findCandidateById(int id);
 
+    void saveUser(User user);
+
     User findUserById(int id);
 
     Collection<User> getAllUsers();
