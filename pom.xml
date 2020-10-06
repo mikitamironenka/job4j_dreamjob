@@ -27,13 +27,38 @@
         <maven.compiler.source>14</maven.compiler.source>
         <maven.compiler.target>14</maven.compiler.target>
         <log4jVersion>2.11.1</log4jVersion>
+        <mockitoVersion>3.5.13</mockitoVersion>
+        <servletApiVersion>4.0.1</servletApiVersion>
+        <postgreSqlVersion>42.2.9</postgreSqlVersion>
+        <apacheCommonsVersion>2.7.0</apacheCommonsVersion>
+        <powerMockVersion>2.0.0</powerMockVersion>
     </properties>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.powermock/powermock-module-junit4 -->
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-module-junit4</artifactId>
+            <version>2.0.7</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-api-mockito</artifactId>
+            <version>1.6.2</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.mockito/mockito-core -->
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>2.23.4</version>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
-            <version>4.0.1</version>
+            <version>${servletApiVersion}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -44,12 +69,12 @@
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>42.2.9</version>
+            <version>${postgreSqlVersion}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-dbcp2</artifactId>
-            <version>2.7.0</version>
+            <version>${apacheCommonsVersion}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
